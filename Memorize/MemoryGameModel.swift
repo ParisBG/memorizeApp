@@ -10,9 +10,21 @@ import Foundation
 struct MemoryGame<CardContent> {
     private(set) var cards: Array<Card> //set means editing is private but anybody can view
     
-    func choose(_ card: Card){
-        
-    } //using external naming here
+    mutating func choose(_ card: Card){
+        //Toggle is the same as as "toggling" a boolean from true to false.
+        let chosenIndex = index(of: card)
+        cards[chosenIndex].isFaceUp.toggle()
+        print("\(cards)")
+    }
+    
+     func index(of card: Card) -> Int {
+        for index in 0..<cards.count {
+            if cards[index].id == card.id {
+                return index
+            }
+        }
+        return 0 //bogus!
+    }
     
     init(numberOfPairsOfCards: Int, createCardContent: (Int) -> CardContent){
         cards = Array<Card>()
@@ -30,7 +42,6 @@ struct MemoryGame<CardContent> {
         var isMatched: Bool = false
         var content: CardContent //Generic Type
         var id: Int
-
     }
 }
 
