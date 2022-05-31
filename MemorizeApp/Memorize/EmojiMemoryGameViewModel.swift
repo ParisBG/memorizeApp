@@ -8,12 +8,11 @@
 import SwiftUI
 
 class EmojiMemoryGame: ObservableObject {
-    static let emojis = ["🚗","🚕","🏎","🚓","🚔","🚘","🚖","🚥"]
+    var emojis =  boatTheme.emojis
     
     static func createMemoryGame() -> MemoryGame<String> {
-        MemoryGame<String>(numberOfPairsOfCards: 4) { pairIndex in EmojiMemoryGame.emojis[pairIndex] }
-    }
- 
+          MemoryGame<String>(numberOfPairsOfCards: 4) { pairIndex in EmojiMemoryGame.emojis[pairIndex] }
+      }
     //This var is automatically created and assigned under the hood. This is just an example
     //var objectWillChange: ObservedObjectPublisher
     
@@ -33,4 +32,17 @@ class EmojiMemoryGame: ObservableObject {
         model.choose(card)
     }
 }
-	
+
+var carTheme = Theme(name: "cars", emojis: ["🚗","🚕","🏎","🚓","🚔","🚘","🚖","🚥"], numOfCardPairs: 8, color: .purple)
+var truckTheme = Theme(name: "trucks", emojis: ["🚙","🚌","🚎","🚑","🚒","🚐","🛻","🚚","🚛","🚜","🚍"], numOfCardPairs: 8, color: .red)
+var aircraftTheme = Theme(name: "aircraft", emojis: ["✈️","🚀","🚡","🛰","🚁","🛸","🛩","🛬","🛫"], numOfCardPairs: 8, color: .blue)
+var cycleTheme = Theme(name: "cycles", emojis: ["🚲","🛵","🏍","🦽","🦼","🛴","🦯","🛺"], numOfCardPairs: 8, color: .green)
+var boatTheme = Theme(name: "boats", emojis: ["🛳","⛵️","🛶","🚤","🛥","⛴","🚢","⚓️"], numOfCardPairs: 8, color: .orange)
+var trainTheme = Theme(name: "trains", emojis: ["🚉","🚊","🚇","🚆","🚂","🚈","🚅","🚄","🚝","🚞","🚋","🚃","🚟","🚠","🚡"], numOfCardPairs: 8, color: .yellow)
+
+struct Theme {
+    var name: String
+    var emojis: [String]
+    var numOfCardPairs: Int
+    var color: UIColor
+}

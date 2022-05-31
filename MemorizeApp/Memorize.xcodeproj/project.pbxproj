@@ -14,7 +14,6 @@
 		E1982CEF2839B74C0078CFEB /* Extra.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1982CEE2839B74C0078CFEB /* Extra.swift */; };
 		E1D320A02835289200DE99A5 /* MemoryGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D3209F2835289200DE99A5 /* MemoryGameModel.swift */; };
 		E1D320A228352CBF00DE99A5 /* EmojiMemoryGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D320A128352CBF00DE99A5 /* EmojiMemoryGameViewModel.swift */; };
-		F2EDFB31283FE3BC006C0856 /* ThemeChooser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EDFB30283FE3BC006C0856 /* ThemeChooser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +25,6 @@
 		E1982CEE2839B74C0078CFEB /* Extra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extra.swift; sourceTree = "<group>"; };
 		E1D3209F2835289200DE99A5 /* MemoryGameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGameModel.swift; sourceTree = SOURCE_ROOT; };
 		E1D320A128352CBF00DE99A5 /* EmojiMemoryGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGameViewModel.swift; sourceTree = "<group>"; };
-		F2EDFB30283FE3BC006C0856 /* ThemeChooser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeChooser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +62,6 @@
 				E1D320A128352CBF00DE99A5 /* EmojiMemoryGameViewModel.swift */,
 				E103F8FB281F8FBB0071B38D /* ContentView.swift */,
 				E1982CEE2839B74C0078CFEB /* Extra.swift */,
-				F2EDFB30283FE3BC006C0856 /* ThemeChooser.swift */,
 				E103F8FD281F8FBD0071B38D /* Assets.xcassets */,
 				E103F8FF281F8FBD0071B38D /* Preview Content */,
 			);
@@ -150,7 +147,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1D320A228352CBF00DE99A5 /* EmojiMemoryGameViewModel.swift in Sources */,
-				F2EDFB31283FE3BC006C0856 /* ThemeChooser.swift in Sources */,
 				E1D320A02835289200DE99A5 /* MemoryGameModel.swift in Sources */,
 				E1982CEF2839B74C0078CFEB /* Extra.swift in Sources */,
 				E103F8FC281F8FBB0071B38D /* ContentView.swift in Sources */,
